@@ -39,3 +39,28 @@ Explicit
 
     }
 
+# Ternary operator
+
+let someVar
+
+someVar = (true) ? true : true
+
+What is above is the same with below
+
+if(true) {
+    someVar = true
+}else {
+    someVar = false
+}
+
+# Modulus operator
+
+# Nullish coalescing operator
+|| or
+
+var pick_a_number
+
+pick_a_number = pick_a_number || Math.floor(Math.random()* arrar)
+
+# try ,catch , finally
+
