@@ -3,6 +3,32 @@
     <head>
         <script src = "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=ruby&amp;skin=sons-of-obsidian"> </script>
         <link rel="stylesheet" href="style.css">
+        <style>
+            main {
+              display: flex;
+              width: 100%;
+              height: 100vh;
+              justify-content: center;
+              align-items: center;
+            }
+      
+            .info {
+              max-width: 50rem;
+              margin: 1rem;
+              padding: 0.5rem 2rem 1rem;
+              border: 3px solid black;
+              font-size: 1.4rem;
+              line-height: 1.3;
+              text-align: center;
+            }
+      
+            code {
+              padding: 2px 4px;
+              border-radius: 4px;
+              background-color: hsl(251, 77%, 90%);
+            }
+          </style>
+          <script src="scripts.js" defer></script>
     </head>
     <body>
         <div><h1>JavaScript ES6</h1></div>
@@ -97,9 +123,110 @@
                     </td>
                 </tr>
             </table> 
-            
+            <h2>JavaScript essetial training</h2>
+            <h4>Amblella of JavaScript</h4>
+            Angular
+            Babel
+            CoffeeScript
+            ES2015
+            ECMAScript
+            ES6
+            Gulp
+            JSX
+            Node.js
+            React
+            TypeScript
+            Vanilla JavaScript
+            Vue.js
+            WebPack
+            <h2>Navigating the JS Landscape</h2>
+            <h3>Vanilla JavaScript or Vanilla JS</h3>
+            The core language; sometimes referred to as <strong>Vanilla JavaScript or Vanilla JS</strong>
+            <h3>ECMAScript</h3>
+            Browser specification of the JavaScript language
+            <h3>TypeScript</h3>
+            Variation, dialect, or flavor of JavaScript introducing features like strong typing
+            <h3>React, Vue, Angular</h3>
+            JavaScript frameworks allowing us to write JavaScript-based front-end applications.
+            <h3>npm, WebPack, Gulp</h3>
+            Build tools and infrastructure to automate the process of optimizing human-readable JavaScript for
+            the best browser performance
+            <h3>Node.js</h3>
+            JavaScript server runtime used to run JavaScript everywhere; 
+            used to run npm, WebPack, Babel, and more on your computer
+            <h2>Formatting and Linting</h2>
+            <h2>browser console</h2>
+            console.log("note");
+            cmd
+            <div class="console"></div>
+            <pre class="prettyprint">
+                note
+                window.document
+            </pre>
 
+            <h2>JavaScript language basics</h2>
+            <h4> comments </h4>
+            <pre class="prettyprint">
+                /**
+                * 
+                * @param {*} update 
+                */
+            </pre>
+            <h2>Qoutation Marks</h2>
+            string " "
+            char ' '
+            <h1>02</h1>
+            <h2>HTML document</h2>
+            <div class="info">
+                <h1>Inline JavaScript</h1>
+                <p>
+                  You can write JavaScript directly inside an HTML document using the
+                  <code>script</code> element. The element can be added in the
+                  <code>head</code> section or inside the <code>body</code> element.
+                </p>
+            </div>
+            <h2>Modules</h2>
+                We import JavaScript file inside JavaScript file 
+                for <h5>Example</h5>.
+                file scripts.js we import backpack
+                import backpack from "./backpack.js";
+                then on 
+                file backpack.js we export backpack
+                export default backpack;
+            <h5>Notes</h5>
+            on your header 
+            script src="scripts.js" defer> script
+            you will need to change it to
+
+            script type="module" src="scripts.js" > script
+            and the next file
+            script type="module" src="backpack.js" > script
+        <h1>03</h1>
+        <h2>Object</h2>
+            01 Each object is a unique instance of an object prototype.
+            <br>
+            02 Objects have features that allow us to change their properties.
+            <br>
+            03 Object can contain other objects
+            <pre class="prettyprint">
+                const backpack = {
+                    name: "Everyday Backpack",
+                    volume: 30,
+                    color: "grey",
+                    pocketNum: 15,
+                    strapLength: {
+                    left: 26,
+                    right: 26,
+                }
+            </pre>
         </div>
-
+        
+        <script>
+            const allCode = document.querySelectorAll("code");
+      
+            for (let item of allCode) {
+              item.innerHTML = `&lt;${item.innerHTML}&gt;`;
+            }
+          </script>
     </body>
 </html>
