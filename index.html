@@ -2,30 +2,98 @@
 <html>
     <head>
         <script src = "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=ruby&amp;skin=sons-of-obsidian"> </script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div><h1>JavaScript ES6</h1></div>
         
         <div>
             <table>
+                <tr><th><h3>Data Types</h3></th></tr>
+                <tr>
+                    <th><h2>Notes</h2></th>
+                    <th><h2>Code</h2></th>
+                    <th><h2>Example</h2></th>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <h3>Data Types</h3>
+                        <h4>Var</h4>
+                            Can be Redeclared
+                        <h4>, Let </h4>
+                            Can not be Redeclared , Must be declared before use and have block scope.
+                        <h4>and Const</h4>
+                        Can not be Redeclared, Must be Assigned ,cannot be Reassigned and have Block Scope.
+                    </td>
+                    <td>
+                        
+                        <pre class="prettyprint">
+                        var nameVar = "name";
+                        let nameLet = "name";
+                        const nameConst = "name";
+                        </pre>
+                    </td>
+                    <td>
+                        <h4>Can be Redeclared</h4>
+                        <pre class="prettyprint">
+                        var nameVar = "name";
+                        var nameVar = 0;
+                        
+                        </pre>
+                        <h4>Can not be Redeclared</h4>
+                        <pre class="prettyprint">
+                        let nameLet = "name";
+                        let nameLet = 0;
+                        // SyntaxError: 'nameLet' has been declared
+                        </pre>
+                        <h4>Can not be Reassigned</h4>
+                        <pre class="prettyprint">
+                            const PI = 3.141592653589793;
+                            PI = 3.14;      // This will give an error
+                            PI = PI + 10;   // This will also give an error
+                        </pre>
+                        <h4>Must be Assigned</h4>
+                        <pre class="prettyprint">
+                            const PI = 3.141592653589793;
+                        </pre>
+                        <h4>You can change the elements of a constant array:</h4>
+                        <pre class="prettyprint">
+                            // You can create a constant array:
+                            const cars = ["Saab", "Volvo", "BMW"];
+
+                            // You can change an element:
+                            cars[0] = "Toyota";
+
+                            // You can add an element:
+                            cars.push("Audi");
+                        </pre>
+                        <h4>But you can NOT reassign the array:</h4>
+                        <pre class="prettyprint">
+                            const cars = ["Saab", "Volvo", "BMW"];
+
+                            cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+                        </pre>
+                    </td>
+                </tr>
+                <tr><th><h3>Void, null, empty, undefine</h3></th></tr>
                 <tr>
                     <th><h2>Notes</h2></th>
                     <th><h2>Code</h2></th>
                     <th><h2>Example</h2></th>
                 </tr>
                 <tr>
-                    <td><h3>Varables</h3>Var, Let and Const</td>
-                    <td><pre class="prettyprint">
-                        var nameVar = "name";
-                        let nameLet = "name";
-                        const nameConst = "name";
-                        </pre>
+                    <td>
+                        <h3>Void</h3>Var, Let and Const
+                        <h3>null</h3>Var, Let and Const
+                        <h3>empty</h3>Var, Let and Const
+                        <h3>undefine</h3>Var, Let and Const
                     </td>
-                    <td><pre class="prettyprint">
-                        var nameVar = "name";
-                        let nameLet = "name";
-                        const nameConst = "name";
-                        </pre>
+                    <td>
+                        <h3>Varables</h3>Var, Let and Const
+                    </td>
+                    <td>
+                        <h3>Varables</h3>Var, Let and Const
                     </td>
                 </tr>
             </table> 
