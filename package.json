@@ -1,0 +1,19 @@
+{
+  "name": "npm-int-example",
+  "version": "1.0.0",
+  "description": "example package.json",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pro-lover/Javascript_ES6.git"
+  },
+  "author": "sithembiso sithembiso72@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pro-lover/Javascript_ES6/issues"
+  },
+  "homepage": "https://github.com/pro-lover/Javascript_ES6#readme"
+}
